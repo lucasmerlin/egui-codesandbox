@@ -19,7 +19,7 @@ impl App {
 
 impl eframe::App for App {
     fn update(&mut self, ctx: &egui::Context, _frame: &mut eframe::Frame) {
-        egui::Window::new("Hello Egui").show(ctx, |ui| {
+        egui::Window::new("Hello Egui Updated").show(ctx, |ui| {
             ui.label("Hello World!");
         });
     }
