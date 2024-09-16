@@ -1,5 +1,7 @@
 #[derive(Default, Debug, Clone, serde::Serialize, serde::Deserialize)]
-pub struct App {}
+pub struct App {
+    hello: String,
+}
 
 impl App {
     /// Called once before the first frame.
@@ -21,6 +23,8 @@ impl eframe::App for App {
     fn update(&mut self, ctx: &egui::Context, _frame: &mut eframe::Frame) {
         egui::Window::new("Hello Egui").show(ctx, |ui| {
             ui.label("Hello World!");
+
+            ui.text_edit_singleline(&mut self.hello);
         });
     }
 }
