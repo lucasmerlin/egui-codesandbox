@@ -1,0 +1,12 @@
+[package]
+name = "workspace"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+eframe = { version = "0.28.1", features = ["persistence"] }
+egui = "0.28.1"
+env_logger = "0.11.5"
+log = "0.4.22"
+wasm-bindgen-futures = "0.4.43"
+serde = "1"
